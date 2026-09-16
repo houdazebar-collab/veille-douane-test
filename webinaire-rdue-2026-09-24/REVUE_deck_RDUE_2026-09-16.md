@@ -4,6 +4,8 @@ Revue effectuée le 16 septembre 2026 sur la version Google Slides « AtelierRDU
 
 Livrables :
 
+- `RDUE_Webinaire_2026-09-24_v3.pptx` (et son rendu PDF) : **refonte complète** du deck, 34 slides au format 16:9, charte unique construite sur les couleurs du logo CCI, logo CCI Lyon Métropole identique sur chaque slide, icônes vectorielles pour les produits, calendrier déplacé en partie I. Généré par le script `build_v3.js` (pptxgenjs), ce qui permet de régénérer le deck après toute correction de texte.
+
 - `AtelierRDUECCI_revu_2026-09-16.pptx` (et son rendu PDF) : deck réordonné (34 slides), textes mis à jour, pieds de page renumérotés, quiz final ajouté, deux slides raster reconstruites en formes natives, titres longs raccourcis, plancher de police relevé. Fichier dans le dépôt GitHub (branche `claude/deforestation-webinar-slides-fuqj1e`) et joint à la conversation ; à importer dans Google Slides.
 - Ce document : constats de cohérence, mises à jour réglementaires appliquées, points restant à vérifier, recommandations de forme.
 
@@ -83,6 +85,16 @@ Recommandations restantes, par ordre d'impact :
 5. **Ajouter 2 sondages** en plus des cas pratiques et du quiz final : « Quel est votre rôle ? » après la slide acteurs, « Avez-vous un compte EU Login ? » avant la partie III.
 6. **Calendrier** : garder 5 jalons maximum sur une frise, mettre les jalons passés en gris et les échéances à venir en couleur.
 7. **Slide de titre** : ajouter le logo CCI en image plutôt qu'en texte, et harmoniser les deux cartes intervenantes (Céline a une société et un titre, Houda seulement « co-animatrice »).
+
+## 5 bis. Version 3 : la refonte du design
+
+- **Format 16:9** (13,33 × 7,5 po) adapté au partage d'écran, au lieu du 4:3.
+- **Charte** : bleu CCI (00439A) et bleu nuit pour la structure, rose CCI (E6005F) réservé aux accents, vert / rouge / ambre uniquement pour le sens (autorisé, interdit, vigilance). Calibri partout, titres 28 pt, corps 12 à 14 pt, aucune information sous 10 pt hors pieds de page.
+- **Logos** : le logo officiel CCI Lyon Métropole Saint-Étienne Roanne et le logo CF² Douane ont été récupérés dans la version du 25 août du deck (ils avaient été remplacés par du texte dans la version du 31 août, d'où les logos « qui sautent »). Le logo CCI est placé au même endroit, à la même taille, sur les 34 slides ; sur fond bleu nuit il est posé sur un cartouche blanc. Le logo CF² n'existe qu'en 266 px : fournir une version haute définition pour la slide de titre et la slide de clôture.
+- **Ordre** : le calendrier consolidé passe en partie I, juste après « Annexe I : ce qui change », conformément au sommaire (« calendrier & évolution de l'annexe I »). L'introduction garde le report d'un an dans « Le RDUE en bref ».
+- **Images produits** : les dessins recolorés de la brochure douane sont remplacés par des pictogrammes vectoriels homogènes (café, cacao, caoutchouc, soja, huile de palme, bœuf, bois) dans des pastilles bleu clair ; le cuir est signalé comme sorti du champ.
+- **Slides reconstruites** : les deux anciens PNG (entrant/sortant, logigramme) sont natifs ; les slides « acteurs », « pays », « sanctions », « escalier » et « synthèse » ont un gabarit commun (cartes, en-têtes colorés, pastilles d'article).
+- **Reste à faire par vous** : relire les textes, masquer les réponses du quiz et des cas pratiques avant le vote, et remplacer le logo CF² par une version HD.
 
 ## 6. Sources consultées
 
