@@ -4,7 +4,7 @@ Revue effectuée le 16 septembre 2026 sur la version Google Slides « AtelierRDU
 
 Livrables :
 
-- `AtelierRDUECCI_revu_2026-09-16.pptx` : deck réordonné (34 slides), textes mis à jour, pieds de page renumérotés, quiz final ajouté. Une copie a été déposée dans le Drive (même nom).
+- `AtelierRDUECCI_revu_2026-09-16.pptx` : deck réordonné (34 slides), textes mis à jour, pieds de page renumérotés, quiz final ajouté. Fichier dans le dépôt GitHub (branche `claude/deforestation-webinar-slides-fuqj1e`) et joint à la conversation ; à importer dans Google Slides.
 - Ce document : constats de cohérence, mises à jour réglementaires appliquées, points restant à vérifier, recommandations de forme.
 
 ## 1. En résumé
