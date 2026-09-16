@@ -75,7 +75,7 @@ function divider(idx,label,time,bul){
   txt(s,'En distanciel  ·  jeudi 24 septembre 2026  ·  1 h 30',0.8,6.6,8,0.4,{fontSize:13,color:'9FB3D1'});
 }
 // ============ 2. SOMMAIRE ============
-{ const s=slide(); chrome(s); title(s,'Sommaire','Le déroulé du webinaire — 1 h 30, une introduction et quatre parties.');
+{ const s=slide(); chrome(s); title(s,'Sommaire','Le déroulé du webinaire : une introduction et quatre parties.');
   const rows=[['IN','Introduction — Contexte & enjeux','Urgence écologique · objectifs du règlement · le texte 2023/1115 modifié par 2025/2650','10 min'],
     ['I','Êtes-vous concernés ?','7 matières & dérivés (annexe I) · ce qui change en 2026-2027 · calendrier · définitions · acteurs & responsabilités','20 min'],
     ['II','La diligence raisonnée','Le système de diligence (SDR) · les 3 étapes · la diligence simplifiée · le réexamen annuel','30 min'],
@@ -84,8 +84,8 @@ function divider(idx,label,time,bul){
   rows.forEach(([k,t,d,m],i)=>{ const y=1.75+i*1.02; card(s,0.6,y,12.1,0.88);
     s.addShape(pres.shapes.ROUNDED_RECTANGLE,{x:0.78,y:y+0.14,w:0.9,h:0.6,fill:{color:C.BLUE},line:{color:C.BLUE},rectRadius:0.08});
     txt(s,k,0.78,y+0.14,0.9,0.6,{fontSize:16,bold:true,color:C.WHITE,align:'center',valign:'middle'});
-    txt(s,t,1.9,y+0.1,8.5,0.38,{fontSize:16,bold:true,color:C.NAVY}); txt(s,d,1.9,y+0.48,8.6,0.35,{fontSize:11.5,color:C.GREY});
-    pill(s,10.9,y+0.25,1.55,0.38,m,C.BLUE_L,{color:C.BLUE,size:11}); });
+    txt(s,t,1.9,y+0.1,10.5,0.38,{fontSize:16,bold:true,color:C.NAVY}); txt(s,d,1.9,y+0.48,10.5,0.35,{fontSize:11.5,color:C.GREY});
+    });
 }
 // ============ 3. OBJECTIFS ============
 { const s=slide(); chrome(s); title(s,'Objectifs du webinaire','Ce que vous saurez faire en sortant.');
@@ -224,12 +224,16 @@ divider(2,'II','30 min',['Le système de diligence raisonnée (SDR)','La démarc
 }
 // ============ 19. PAYS ============
 { const s=slide(); chrome(s); title(s,'La diligence simplifiée : le rôle du pays','Le pays de production module l\'intensité de la diligence (benchmarking, art. 29) — liste du 22/05/2025, révision annoncée pour 2026.');
-  const rows=[['140','RISQUE FAIBLE','pays, dont toute l\'UE, le Royaume-Uni, les États-Unis, la Chine…','Diligence simplifiée : seule la collecte d\'informations (étape 1) est exigée — l\'avantage stratégique.','1 %',C.GREEN],['~50','RISQUE STANDARD','pays — Brésil, Indonésie, Malaisie, Côte d\'Ivoire…','Diligence raisonnée complète : les trois étapes sont obligatoires.','3 %',C.AMBER],['4','RISQUE ÉLEVÉ','Biélorussie · Corée du Nord · Birmanie · Russie','Vigilance renforcée et contrôles accrus.','9 %',C.RED]];
-  rows.forEach(([nb,lab,p,d,ctrl,col],i)=>{ const y=1.85+i*1.5; card(s,0.6,y,12.1,1.35); s.addShape(pres.shapes.ROUNDED_RECTANGLE,{x:0.6,y,w:2.3,h:1.35,fill:{color:col},line:{color:col},rectRadius:0.08}); s.addShape(pres.shapes.RECTANGLE,{x:2.6,y,w:0.3,h:1.35,fill:{color:col},line:{color:col}});
-    txt(s,nb,0.6,y+0.12,2.3,0.7,{fontSize:34,bold:true,color:C.WHITE,align:'center'}); txt(s,lab,0.6,y+0.85,2.3,0.35,{fontSize:10,bold:true,color:C.WHITE,align:'center',charSpacing:1.5});
-    txt(s,p,3.2,y+0.15,6.6,0.4,{fontSize:13.5,bold:true,color:C.NAVY}); txt(s,d,3.2,y+0.6,6.6,0.7,{fontSize:12,color:C.GREY});
-    txt(s,'Contrôles',10.3,y+0.2,2.2,0.3,{fontSize:10,color:C.MUTE,align:'center',charSpacing:1.5}); txt(s,ctrl,10.3,y+0.45,2.2,0.7,{fontSize:26,bold:true,color:col,align:'center'}); });
-  txt(s,'Taux de contrôle minimaux des autorités (art. 16) : part des opérateurs — et des quantités pour le risque élevé. Le mélange en cours de chaîne avec des produits d\'origine inconnue fait retomber dans le régime complet.',0.6,6.4,12.1,0.5,{fontSize:10.5,color:C.MUTE,italic:true});
+  const rows=[['140','RISQUE FAIBLE','pays, dont toute l\'UE, le Royaume-Uni, les États-Unis, la Chine, l\'Inde, le Vietnam…','Diligence simplifiée : seule la collecte (étape 1) est exigée.','1 %',C.GREEN],['~50','RISQUE STANDARD','pays — Brésil, Indonésie, Malaisie, Côte d\'Ivoire, Colombie, Pérou…','Diligence raisonnée complète : les trois étapes.','3 %',C.AMBER],['4','RISQUE ÉLEVÉ','Biélorussie · Corée du Nord · Birmanie · Russie','Vigilance renforcée et contrôles accrus.','9 %',C.RED]];
+  rows.forEach(([nb,lab,p,d,ctrl,col],i)=>{ const y=1.85+i*1.45; card(s,0.6,y,5.2,1.3); s.addShape(pres.shapes.ROUNDED_RECTANGLE,{x:0.6,y,w:1.35,h:1.3,fill:{color:col},line:{color:col},rectRadius:0.08}); s.addShape(pres.shapes.RECTANGLE,{x:1.75,y,w:0.2,h:1.3,fill:{color:col},line:{color:col}});
+    txt(s,nb,0.6,y+0.12,1.35,0.65,{fontSize:26,bold:true,color:C.WHITE,align:'center'}); txt(s,lab,0.6,y+0.82,1.35,0.35,{fontSize:8,bold:true,color:C.WHITE,align:'center',charSpacing:1});
+    txt(s,p,2.1,y+0.1,2.9,0.6,{fontSize:10.5,bold:true,color:C.NAVY}); txt(s,d,2.1,y+0.72,2.9,0.55,{fontSize:9.5,color:C.GREY});
+    txt(s,'contrôles',5.05,y+0.2,0.7,0.25,{fontSize:8,color:C.MUTE,align:'center'}); txt(s,ctrl,5.0,y+0.45,0.8,0.6,{fontSize:20,bold:true,color:col,align:'center'}); });
+  card(s,6.05,1.85,6.65,4.5); s.addImage({data:'image/png;base64,'+fs.readFileSync('map.png').toString('base64'),x:6.2,y:1.95,w:6.35,h:3.18});
+  const leg=[[C.GREEN,'Risque faible'],[C.AMBER,'Risque standard'],[C.RED,'Risque élevé']];
+  leg.forEach(([c,l],i)=>{ const x=6.35+i*2.1; s.addShape(pres.shapes.OVAL,{x,y:5.4,w:0.22,h:0.22,fill:{color:c},line:{color:c}}); txt(s,l,x+0.3,5.36,1.7,0.3,{fontSize:11,color:C.INK,valign:'middle'}); });
+  txt(s,'Carte indicative d\'après le règlement d\'exécution (UE) 2025/1093 (liste du 22/05/2025) — à contrôler sur l\'annexe officielle avant diffusion.',6.2,5.75,6.35,0.5,{fontSize:9.5,color:C.MUTE,italic:true});
+  txt(s,'Taux de contrôle minimaux des autorités (art. 16) : part des opérateurs — et des quantités pour le risque élevé. Le mélange en cours de chaîne avec des produits d\'origine inconnue fait retomber dans le régime complet.',0.6,6.45,12.1,0.5,{fontSize:10.5,color:C.MUTE,italic:true});
 }
 // ============ 20. LOGIGRAMME ============
 { const s=slide(); chrome(s); title(s,'Le parcours de diligence raisonnée','Le parcours obligatoire, article par article (art. 8 à 13).');
