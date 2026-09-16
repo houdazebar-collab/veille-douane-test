@@ -4,7 +4,7 @@ Revue effectuée le 16 septembre 2026 sur la version Google Slides « AtelierRDU
 
 Livrables :
 
-- `AtelierRDUECCI_revu_2026-09-16.pptx` : deck réordonné (34 slides), textes mis à jour, pieds de page renumérotés, quiz final ajouté. Fichier dans le dépôt GitHub (branche `claude/deforestation-webinar-slides-fuqj1e`) et joint à la conversation ; à importer dans Google Slides.
+- `AtelierRDUECCI_revu_2026-09-16.pptx` (et son rendu PDF) : deck réordonné (34 slides), textes mis à jour, pieds de page renumérotés, quiz final ajouté, deux slides raster reconstruites en formes natives, titres longs raccourcis, plancher de police relevé. Fichier dans le dépôt GitHub (branche `claude/deforestation-webinar-slides-fuqj1e`) et joint à la conversation ; à importer dans Google Slides.
 - Ce document : constats de cohérence, mises à jour réglementaires appliquées, points restant à vérifier, recommandations de forme.
 
 ## 1. En résumé
@@ -61,23 +61,28 @@ Chiffres vérifiés et conservés : 420 Mha perdus 1990-2020, 10 Mha/an, 11 % de
 
 Constats mesurés sur le fichier :
 
-- Corps de texte à 8 à 8,5 pt sur 9 slides (calendrier, matières, définitions, acteurs, 3 étapes, FAQ). En partage d'écran compressé, tout ce qui est sous 12 pt est illisible.
+- Corps de texte à 8 à 8,5 pt sur 9 slides (calendrier, matières, définitions, acteurs, 3 étapes, FAQ). En partage d'écran compressé, tout ce qui est sous 12 pt est illisible. Plancher relevé à 9,5 pt dans le fichier revu ; 12 pt reste la cible.
 - Densité : sommaire 150 mots / 41 formes, acteurs 149 mots, FAQ 122 mots, déclarer en douane 119 mots, escalier 53 formes, calendrier 42 formes. Cible webinaire : 60 à 70 mots par slide.
-- Deux slides (« Qui est concerné ? entrant/sortant » et « Logigramme ») sont des PNG plein écran : texte non modifiable, flou en zoom, typographie différente du reste (police Lato-like et titre rose vs Calibri navy). Le logigramme laisse un tiers de la slide vide à gauche.
+- Deux slides (« Qui est concerné ? entrant/sortant » et « Logigramme ») étaient des PNG plein écran : texte non modifiable, flou en zoom, typographie différente du reste. Corrigé (voir ci-dessous).
 - Un seul layout « DEFAULT » : en-tête, pied de page et numéro de page sont des zones de texte posées à la main sur chaque slide. C'est la cause du « 31/33 » en position 26.
 - Palette : navy, bleu ciel, turquoise, orange, rose, rouge. Six accents, dont le rose utilisé 46 fois en texte. Trop pour lire une hiérarchie.
 - Une seule interaction (cas pratiques) pour 1 h 30.
 
-Recommandations, par ordre d'impact :
+Appliqué dans le fichier revu :
+
+- Les deux slides raster (« Qui est concerné ? » et le logigramme de diligence) sont reconstruites en formes natives Calibri, aux couleurs du deck, texte modifiable. Leur contenu intègre les règles 2025/2650 (l'aval ne dépose pas de DDR, il conserve le n° du fournisseur).
+- Cinq titres qui passaient sur deux lignes et chevauchaient le sous-titre ont été raccourcis (annexe I, définitions, cas pratiques, FAQ, classification des pays).
+- Tout texte de contenu à 8 ou 8,5 pt est passé à 9,5 pt ; le corps de la slide « Acteurs » est passé de 10 à 11,5 pt. Rendu vérifié slide par slide.
+
+Recommandations restantes, par ordre d'impact :
 
 1. **Créer un masque** avec en-tête, pied de page et numérotation automatique, puis 4 layouts (titre, intercalaire, contenu, contenu + visuel). Cela supprime 4 formes par slide et les erreurs de numérotation.
 2. **Fixer une échelle de tailles** : titre 28, sous-titre 16, corps 14 minimum, légendes 11 minimum. Supprimer tout 7 à 8,5 pt hors pied de page.
 3. **Découper les slides denses** : « Acteurs & responsabilités » en 3 slides ou en apparition progressive (une colonne par clic) ; « Sommaire » en 5 lignes sans descriptions ; « Déclarer en douane » en 2 slides (cas concerné / exemptions).
-4. **Refaire les deux images plein écran en formes natives** dans le style du deck (mêmes couleurs, Calibri). Le logigramme gagne à être présenté verticalement en 4 étapes avec l'embranchement « pays à risque faible » en encart.
-5. **Réduire la palette** à navy + un accent (turquoise) + rouge/vert sémantiques. Réserver le rose aux appels à l'action ou le supprimer.
-6. **Ajouter 2 sondages** en plus des cas pratiques et du quiz final : « Quel est votre rôle ? » après la slide acteurs, « Avez-vous un compte EU Login ? » avant la partie III.
-7. **Calendrier** : garder 5 jalons maximum sur une frise, mettre les jalons passés en gris et les échéances à venir en couleur.
-8. **Slide de titre** : ajouter le logo CCI en image plutôt qu'en texte, et harmoniser les deux cartes intervenantes (Céline a une société et un titre, Houda seulement « co-animatrice »).
+4. **Réduire la palette** à navy + un accent (turquoise) + rouge/vert sémantiques. Réserver le rose aux appels à l'action ou le supprimer.
+5. **Ajouter 2 sondages** en plus des cas pratiques et du quiz final : « Quel est votre rôle ? » après la slide acteurs, « Avez-vous un compte EU Login ? » avant la partie III.
+6. **Calendrier** : garder 5 jalons maximum sur une frise, mettre les jalons passés en gris et les échéances à venir en couleur.
+7. **Slide de titre** : ajouter le logo CCI en image plutôt qu'en texte, et harmoniser les deux cartes intervenantes (Céline a une société et un titre, Houda seulement « co-animatrice »).
 
 ## 6. Sources consultées
 
